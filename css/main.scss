@@ -1581,7 +1581,8 @@
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		//color: #49bf9d;
+		color: #000;
 		text-decoration: none;
 	}
 
@@ -1589,6 +1590,7 @@
 			border-bottom-color: transparent;
 			color: #49bf9d !important;
 			text-decoration: none;
+			//border-bottom: solid 1px;
 		}
 
 	strong, b {
@@ -2457,7 +2459,7 @@
 		}
 
 		.work-item p {
-			font-size: 0.8em;
+			font-size: 0.9em;
 			line-height: 1.5em;
 			margin: 0;
 		}
