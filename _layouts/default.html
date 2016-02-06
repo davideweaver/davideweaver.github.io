@@ -7,11 +7,101 @@
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+		<div id="wrap">
+			
+			<section>
+	<header class="major">
+		<h2>Hi, I'm Dave Weaver.</h2>
+	</header>
+	<p>I'm currently building a new business in Lancaster called <a href="http://nolinio.com">Nolinio</a>. 
+		We build mobile apps for the enterprise and sell Wingman, a mobile platform that will accelerate your company's mobile selling.  
+		If you're looking for a mobile app for your business, <a href="#email">shoot me an email</a>.</p>
+	<ul class="actions">
+		<li><a href="/about" class="button">More About Me</a></li>
+	</ul>
+</section>
+
+<section>
+	<h2>Latest Projects</h2>
+	<div class="row">
+		<article class="6u 12u$(xsmall) work-item">
+			<a href="http://withwingman.com" class="image fit thumb"><img src="/images/examples/thumbs/nolinio.jpg" alt="" /></a>
+			<h3>Wingman</h3>
+			<p>Wingman is a mobile sales enablement app for sales reps. To the enterprise, Wingman is a platform that allows your teams to modernize the sales experience and serve today's customers.</p>
+			<p class="pos">Nolinio, architect and programmer</p>
+		</article>
+		<article class="6u$ 12u$(xsmall) work-item">
+			<a href="http://www.listrak.com/" class="image fit thumb"><img src="/images/examples/thumbs/listrak.jpg" alt="" /></a>
+			<h3>Listrak Giggle App</h3>
+			<p>Nolinio built this app for Listrak's booth exhibit which was a scaled-down version of a Giggle store. The app uses Beacons to identify departments and products within the store.</p>
+			<p class="pos">Nolinio, architect and programmer</p>
+		</article>
+		<article class="6u 12u$(xsmall) work-item">
+			<a href="https://www.totalloyalty.com/appfeatures" class="image fit thumb"><img src="/images/examples/thumbs/tls.jpg" alt="" /></a>
+			<h3>Total Loyalty Solutions</h3>
+			<p>Nolinio used our mobile content management platform to enable TLS to build custom, branded iOS and Android apps for restaurants. One of the largest sources of apps in the App Store.</p>
+			<p class="pos">Nolinio, architect and programmer</p>
+		</article>
+		<article class="6u$ 12u$(xsmall) work-item">
+			<a href="http://loggr.net" class="image fit thumb"><img src="/images/examples/thumbs/loggr.jpg" alt="" /></a>
+			<h3>Loggr</h3>
+			<p>Loggr is a web service that provides app builders with event and user monitoring. monitoring is done in real-time and provides tools for analytics, sharing and notifications.</p>
+			<p class="pos">Founder</p>
+		</article>
+		<article class="6u 12u$(xsmall) work-item">
+			<a href="http://dunktapp.com" class="image fit thumb"><img src="/images/examples/thumbs/dunkt.jpg" alt="" /></a>
+			<h3>Dunkt</h3>
+			<p>Dunkt is a personal project I built to experiment with user interface. The app works on iPads and iPhones and pulls its data from the popular designer website <a href="http://dribbble.com">Dribbble</a>.</p>
+			<p class="pos">Personal project</p>
+		</article>
+		<article class="6u$ 12u$(xsmall) work-item">
+			<a href="https://itunes.apple.com/us/app/versly/id691449650" class="image fit thumb"><img src="/images/examples/thumbs/versly.jpg" alt="" /></a>
+			<h3>Versly</h3>
+			<p>Another personal project I built to use iPhone notifications for reminding users of their favorite Bible verses. Click through and try it out.</p>
+			<p class="pos">Personal project</p>
+		</article>
+	</div>
+</section>
+
+<section>
+	<h2>Get In Touch</h2>
+	<a id="email"></a>
+	<p>I'm always looking for interesting opportunities. 
+		Use the form below to get in touch or connect with me on 
+		<a href="https://www.linkedin.com/in/davideweaver">LinkedIn</a>.</p>
+	<div class="row">
+  <div class="8u 12u$(small)">
+    <form id="pb_contact_form">
+      <div class="row uniform 50%">
+        <div class="6u 12u$(xsmall)"><input type="text" name="pb_contact_name" id="pb_contact_name" placeholder="Name" /></div>
+        <div class="6u$ 12u$(xsmall)"><input type="email" name="pb_contact_email" id="pb_contact_email" placeholder="Email" /></div>
+        <div class="12u$"><textarea name="pb_contact_comment" id="pb_contact_comment" placeholder="Message" rows="4"></textarea></div>
       </div>
-    </div>
+    </form>
+    <ul class="actions">
+      <li><button type="submit" class="button" id="pb_contact_submit" value="Send Message" onclick="submitPBContact()">
+        <span id="pb_contact_spinner" style="display: none">
+          <i class="fa fa-circle-o-notch fa-spin"></i>&nbsp;
+        </span>
+        Send Message
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="4u$ 12u$(small)">
+    <div id="pb_contact_success" class="form-group" style="display: none;color:#49bf9d;">Your contact inquiry was successfully submitted</div>
+    <div id="pb_contact_error" class="form-group" style="display: none;color:darkred;">There was an error submitting your contact inquiry</div>
+    <div id="pb_contact_invalid" class="form-group" style="display: none;color:orange;">Your name and email address are required</div>
+  </div>
+</div>
+<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
+
+</section>
+
+			
+			{{ content }}
+			
+		</div>
 
     {% include footer.html %}
 
