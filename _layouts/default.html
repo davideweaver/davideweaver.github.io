@@ -15,7 +15,7 @@
 	</header>
 	<p>I'm currently building a new business in Lancaster called <a href="http://nolinio.com">Nolinio</a>. 
 		We build mobile apps for the enterprise and sell Wingman, a mobile platform that will accelerate your company's mobile selling.  
-		If you're looking for a mobile app for your business, <a href="#email">shoot me an email</a>.</p>
+		If you're looking for a mobile app for your business, <a href="#contact">shoot me an email</a>.</p>
 	<ul class="actions">
 		<li><a href="/about" class="button">More About Me</a></li>
 	</ul>
@@ -65,42 +65,47 @@
 
 <section>
 	<h2>Get In Touch</h2>
-	<a id="email"></a>
+	<a id="contact"></a>
 	<p>I'm always looking for interesting opportunities. 
 		Use the form below to get in touch or connect with me on 
 		<a href="https://www.linkedin.com/in/davideweaver">LinkedIn</a>.</p>
 	<div class="row">
-  <div class="8u 12u$(small)">
-    <form id="pb_contact_form">
-      <div class="row uniform 50%">
-        <div class="6u 12u$(xsmall)"><input type="text" name="pb_contact_name" id="pb_contact_name" placeholder="Name" /></div>
-        <div class="6u$ 12u$(xsmall)"><input type="email" name="pb_contact_email" id="pb_contact_email" placeholder="Email" /></div>
-        <div class="12u$"><textarea name="pb_contact_comment" id="pb_contact_comment" placeholder="Message" rows="4"></textarea></div>
-      </div>
-    </form>
-    <ul class="actions">
-      <li><button type="submit" class="button" id="pb_contact_submit" value="Send Message" onclick="submitPBContact()">
-        <span id="pb_contact_spinner" style="display: none">
-          <i class="fa fa-circle-o-notch fa-spin"></i>&nbsp;
-        </span>
-        Send Message
-        </button>
-      </li>
-    </ul>
-  </div>
-  <div class="4u$ 12u$(small)">
-    <div id="pb_contact_success" class="form-group" style="display: none;color:#49bf9d;">Your contact inquiry was successfully submitted</div>
-    <div id="pb_contact_error" class="form-group" style="display: none;color:darkred;">There was an error submitting your contact inquiry</div>
-    <div id="pb_contact_invalid" class="form-group" style="display: none;color:orange;">Your name and email address are required</div>
-  </div>
+    <form id="emailform" action="//flipmail.co/api/UKI6RiFPKI2ZuXX2W8me" method="post">
+			<div class="row 12u 12u$(small)">
+				
+				<div class="row uniform 50% 8u">
+					<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+					<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+					<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+					<input type="hidden" name="_after" value="http://daveweaver.net/confirm/">
+				</div>
+				
+				<div class="row uniform 30% 4u$">
+					<div id="formsuccess" class="form-group" style="display: none;color:#49bf9d;">Your contact inquiry was successfully submitted</div>
+					<div id="formerror" class="form-group" style="display: none;color:darkred;">There was an error submitting your contact inquiry</div>
+					<div id="forminvalid" class="form-group" style="display: none;color:orange;">Your name and email address are required</div>
+				</div>
+				
+				<div class="row uniform 100% 12u$">
+					<ul class="actions">
+						<li><button type="submit" class="button" id="submit" value="Send Message">
+							<span id="spinner" style="display: none">
+								<i class="fa fa-circle-o-notch fa-spin"></i>&nbsp;
+							</span>
+							Send Message
+							</button>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+	</form>
 </div>
 <script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
-
+<script type="text/javascript" src="/js/emailform.js"></script>
+	
 </section>
 
-			
-			
-			
 		</div>
 
     {% include footer.html %}
