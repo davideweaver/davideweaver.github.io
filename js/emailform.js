@@ -2,14 +2,21 @@
 
 (function() { 
   $("#emailform").validate();
-	$( "#emailform" ).submit(function( event ) {	
-		if(!$("#name").val().length || !$("#email").val().length) {
+  $("#emailform").submit(function(event) {	
+    if(!$("#name").val().length || !$("#email").val().length) {
       $("#forminvalid").show();
-			event.preventDefault();
+      event.preventDefault();
       return;
     }
-		$("#forminvalid").hide();
+	  
+    if($("#robot").val() != "7") {
+      $("#forminvalid").show();
+      event.preventDefault();
+      return;
+    }        
+    
+    $("#forminvalid").hide();
     $("#submit").prop("disabled", true);
     $("#spinner").show();
-	});
+  });
 }());
