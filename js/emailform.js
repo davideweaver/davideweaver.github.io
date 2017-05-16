@@ -10,7 +10,7 @@
     }
 	  
     if($("#robot").val() != "7") {
-      $("#forminvalid").show();
+      $("#formbadbot").show();
       event.preventDefault();
       return;
     }        
