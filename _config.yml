@@ -6,11 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Dave Weaver - Nolinio & Loggr - Lancaster, PA
+title: Dave Weaver - Software Engineer - Lancaster, PA
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://daveweaver.net" # the base hostname & protocol for your site
+url: "https://daveweaver.net" # the base hostname & protocol for your site
 twitter_username: davideweaver
 github_username:  davideweaver
 
